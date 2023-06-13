@@ -1,12 +1,11 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import css from './ContactList.module.css';
 import { useDispatch, useSelector } from 'react-redux';
-import { deleteContact } from '../../redux/contactsSlice';
+import { deleteContact } from '../../reducers/contactsSlice';
+import css from './ContactList.module.css';
 
-const ContactList = ({ onDeleteContact }) => {
+const ContactList = () => {
   const dispatch = useDispatch();
-  const contacts = useSelector(state => state.contacts.contacts);
+  const contacts = useSelector(state => state.contacts);
   const filter = useSelector(state => state.filter);
 
   const filteredContacts = contacts.filter(contact =>
@@ -31,10 +30,6 @@ const ContactList = ({ onDeleteContact }) => {
       </ul>
     </div>
   );
-};
-
-ContactList.propTypes = {
-  onDeleteContact: PropTypes.func.isRequired,
 };
 
 export default ContactList;
