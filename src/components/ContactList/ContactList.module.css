@@ -1,0 +1,16 @@
+.ContactListItem {
+  margin: 8px;
+}
+
+.ContactListButton {
+  margin-left: 10px;
+  width: 60px;
+  transition: 0.5s;
+}
+
+.ContactListButton:hover,
+.ContactListButton:active {
+  background-color: #4591cf;
+  border-radius: 10px;
+  transition: 0.5s;
+}

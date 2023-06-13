@@ -1,0 +1,25 @@
+.ContactForm {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  padding: 10px;
+
+  border: 2px solid black;
+}
+
+.ContactFormInput {
+  display: block;
+  margin: 10px 0;
+}
+
+.ContactFormButton {
+  width: 100px;
+  transition: 0.5s;
+}
+
+.ContactFormButton:hover,
+.ContactFormButton:active {
+  background-color: #4591cf;
+  border-radius: 10px;
+  transition: 0.5s;
+}
